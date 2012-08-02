@@ -18,6 +18,10 @@ Self-organizing local social networks, more www.facebook.com/dudbro
 
 	</tr>
 <tr>
+    <td><img src="https://raw.github.com/ru-nekit-android/dudbro/master/screenshots/9.jpg"/></td>
+
+	</tr>
+<tr>
     <td><img src="https://raw.github.com/ru-nekit-android/dudbro/master/screenshots/4.jpg"/></td>
 
 	</tr>
