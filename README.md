@@ -1,1 +1,1 @@
-Decentralized social network, more www.facebook.com/dudbro
+Self-organizing local social networks, more www.facebook.com/dudbro
