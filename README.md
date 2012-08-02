@@ -6,6 +6,6 @@ Self-organizing local social networks, more www.facebook.com/dudbro
     <th>Screenshots</th>
   </tr></thead>
   <tbody><tr>
-    <td><img src="http://www.flickr.com/photos/73770175@N05/7695880772/in/photostream"/></td>
+    <td><img src="http://www.flickr.com/photos/73770175@N05/7695880772"/></td>
 </tbody>
 </table>
