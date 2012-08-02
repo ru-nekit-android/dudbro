@@ -7,5 +7,12 @@ Self-organizing local social networks, more www.facebook.com/dudbro
   </tr></thead>
   <tbody><tr>
     <td><img src="https://raw.github.com/ru-nekit-android/dudbro/master/screenshots/1.jpg"/></td>
+
+	</tr>
+<tr>
+    <td><img src="https://raw.github.com/ru-nekit-android/dudbro/master/screenshots/2.jpg"/></td>
+
+	</tr>
+
 </tbody>
 </table>
