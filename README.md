@@ -6,7 +6,6 @@ Self-organizing local social networks, more www.facebook.com/dudbro
     <th>Screenshots</th>
   </tr></thead>
   <tbody><tr>
-    <td><img src="http://heroku-mattt.s3.amazonaws.com/core-data-diagram.png"/></td>
-    
-	</tbody>
+    <td><img src="https://github.com/ru-nekit-android/dudbro/blob/master/screenshots/1.jpg"/></td>
+</tbody>
 </table>
