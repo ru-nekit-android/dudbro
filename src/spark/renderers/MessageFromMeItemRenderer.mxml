@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer xmlns:fx="http://ns.adobe.com/mxml/2009" 
+				xmlns:s="library://ns.adobe.com/flex/spark"
+				xmlns:components="spark.components.*"
+				xmlns:layouts="spark.layouts.*"
+				xmlns:local="*">
+	
+	<fx:Script>
+		<![CDATA[
+			
+			override public function set data(value:Object):void
+			{
+				labelField.text = value.message;
+			}
+			
+			override  protected function createChildren():void
+			{
+				super.createChildren();
+				autoDrawBackground = false;
+				cacheAsBitmap = true;
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:Group right="0">
+		<local:messageFillFromMe id="background" height="100%" width="100%"/>
+		<s:Group>
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout gap="0" horizontalAlign="right" paddingBottom="2" paddingTop="3" paddingLeft="6" paddingRight="10"/>
+			</s:layout>
+			<s:Label id="labelField">
+				<s:resize>
+					<![CDATA[
+					labelField.maxWidth = .7*width;
+					]]>
+				</s:resize>
+			</s:Label>
+		</s:Group>
+	</s:Group>
+	
+</s:ItemRenderer>

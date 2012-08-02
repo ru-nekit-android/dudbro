@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:components="spark.components.*"
+	styleName="aboutMeStyle"
+	title="О себе"
+	>
+	
+	<s:navigationContent>
+		<s:Button id="cancelCall" label="Отмена" styleName="cancelEditStyle"/>
+	</s:navigationContent>
+	
+	<s:actionContent>
+		<s:Button id="saveCall" label="Сохранить" styleName="saveEditStyle"/>
+	</s:actionContent>
+	
+	<s:SkinnableContainer id="mainContainer" width="100%" height="100%">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingRight="10" paddingLeft="10" paddingTop="4" paddingBottom="10" gap="5"/>
+		</s:layout>
+		<s:TextArea id="field" width="100%" height="100%" left="10" right="10" bottom="10" top="10" prompt="О себе" 
+					styleName="textAreaStyle" 
+					returnKeyLabel="go"/>
+		<components:HLine/>
+		<s:CheckBox label="Доступно всем?" id="rule" width="100%" needsSoftKeyboard="true"/>	
+	</s:SkinnableContainer>
+	
+</s:View>

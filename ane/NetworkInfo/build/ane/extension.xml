@@ -1,0 +1,23 @@
+<extension xmlns="http://ns.adobe.com/air/extension/2.5">
+	<id>ru.nekit.ane.NetworkInfo</id>
+	<versionNumber>1</versionNumber>
+	<name>
+		<text xml:lang="en-EN">NetworkInfo</text>
+	</name>
+	<description>
+		<text xml:lang="en-EN">Network info for iPhone</text>
+	</description>
+	<platforms>
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libNetworkInfoiOSLibrary.a</nativeLibrary>
+				<initializer>NetworkInfoExtInitializer</initializer>
+				<finalizer>NetworkInfoExtFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="default">
+			<applicationDeployment />
+		</platform>
+	</platforms>
+	<copyright>© 2012, nekit. All rights reserved.</copyright>
+</extension>

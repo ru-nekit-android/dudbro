@@ -1,0 +1,30 @@
+<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+	<id>ru.nekit.Device</id>
+	<versionNumber>1</versionNumber>
+	<name>
+		<text xml:lang="en-EN">Device info for Android and iPhone.</text>
+	</name>
+	<description>
+		<text xml:lang="en-EN">Device info for Android and iPhone.</text>
+	</description>
+	<platforms>
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>device.jar</nativeLibrary>
+				<initializer>ru.nekit.ane.DeviceExtension</initializer>
+				<finalizer>ru.nekit.ane.DeviceExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+		<platform name="iPhone-ARM">
+            <applicationDeployment>
+                <nativeLibrary>libiOSDevice.a</nativeLibrary>
+                <initializer>DeviceExtInitializer</initializer>
+                <finalizer>DeviceExtFinalizer</finalizer>
+            </applicationDeployment>
+        </platform>
+		<platform name="default">
+			<applicationDeployment/>
+		</platform>
+	</platforms>
+	<copyright>© 2012, nekit. All rights reserved.</copyright>
+</extension>

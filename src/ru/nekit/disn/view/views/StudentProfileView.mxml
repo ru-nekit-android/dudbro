@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*" 
+	xmlns:viewComponent="ru.nekit.disn.view.components.*"
+	styleName="studentProfileStyle"
+	title="Профиль студента">
+	
+	<s:actionContent>
+		<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponent:MainMenuButton id="mainMenu"/>
+		</s:SkinnableContainer>
+	</s:actionContent>
+	
+	<s:layout>
+		<layouts:MultiDPIVerticalLayout paddingRight="2" paddingLeft="2" paddingBottom="6" paddingTop="0" gap="0"/>
+	</s:layout>
+	
+	<s:Group width="100%">
+		<s:Group width="100%">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout gap="0" paddingBottom="6"/>
+			</s:layout>
+			
+			<s:SkinnableContainer id="universityGroupContainer" width="100%">
+				<s:layout>
+					<layouts:MultiDPIHorizontalLayout paddingBottom="10" paddingTop="10" paddingLeft="116" paddingRight="10"/>
+				</s:layout>
+				<components:LabelDisplayComponent id="universityGroup" width="100%" styleName="nicknameStyle"/>
+			</s:SkinnableContainer>
+			
+			<components:HLineTwo/>
+			
+			<s:SkinnableContainer id="otherContainer" width="100%">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout paddingBottom="4" paddingTop="6" paddingLeft="6" paddingRight="10" gap="0"/>
+				</s:layout>
+				
+				<s:Group id="fullnameContainer" width="100%">
+					<s:layout>
+						<layouts:MultiDPIHorizontalLayout paddingLeft="110" paddingBottom="4" paddingTop="4"/>
+					</s:layout>
+					<components:iOSText id="fullname" width="100%" styleName="fullnameStyle"/>		
+				</s:Group>
+			</s:SkinnableContainer>
+		</s:Group>
+		
+		<s:Group>
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingLeft="10" paddingTop="10" paddingRight="10" paddingBottom="10"/>
+			</s:layout>
+			<s:SkinnableContainer styleName="photoContainerStyle">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout paddingTop="10" paddingRight="10" paddingLeft="10" paddingBottom="10"/>
+				</s:layout>
+				<s:BitmapImage id="photo"/>
+			</s:SkinnableContainer>
+		</s:Group>
+		
+	</s:Group>
+	
+	<s:Group width="100%">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout gap="0" paddingBottom="0"/>
+		</s:layout>
+		<s:SkinnableContainer styleName="headerContainerStyle" width="100%">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingBottom="10" paddingTop="10" paddingLeft="10" paddingRight="4"/>
+			</s:layout>
+			<components:LabelDisplayComponent text="Мой университет"/>
+		</s:SkinnableContainer>
+		
+		<components:HLineTwo/>
+		
+		<s:SkinnableContainer id="universityContainer" width="100%">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout paddingBottom="6" paddingTop="6" paddingLeft="10" paddingRight="10" gap="4"/>
+			</s:layout>
+			<s:Group width="100%">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout gap="8" paddingBottom="2" paddingTop="0" paddingLeft="4"/>
+				</s:layout>
+				<components:LabelDisplayComponent id="university" height="100%"/>
+				<components:iOSText id="universityDescription" width="100%"/>
+			</s:Group>
+			<components:HLine/>
+			<s:Group width="100%">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout gap="10" paddingBottom="6" paddingTop="6" paddingLeft="4"/>
+				</s:layout>
+				<components:LabelDisplayComponent id="institute" styleName="universityOtherStyle"/>
+				<components:LabelDisplayComponent id="cathedra" styleName="universityOtherStyle"/>
+			</s:Group>
+		</s:SkinnableContainer>	
+	</s:Group>
+	
+</s:View>

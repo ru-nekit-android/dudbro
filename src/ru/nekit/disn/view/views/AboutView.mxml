@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	styleName="aboutStyle"
+	>
+	
+	<s:navigationContent>
+		<viewComponents:BackButton id="backCall" label="Назад"/>
+	</s:navigationContent>
+	
+	<s:SkinnableContainer id="mainContainer" width="100%" height="100%">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingRight="10" paddingLeft="10" paddingTop="4" paddingBottom="10" gap="5"/>
+		</s:layout>
+		<components:iOSText id="field" width="100%" height="100%" left="10" right="10" bottom="10" top="10"/>
+	</s:SkinnableContainer>
+	
+</s:View>

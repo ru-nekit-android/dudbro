@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91C2FA161453E94E00A5BB1A /* iOSDeviceExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C2FA151453E94E00A5BB1A /* iOSDeviceExtention.m */; };
+		91C2FA181453E9A500A5BB1A /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C2FA171453E9A500A5BB1A /* FlashRuntimeExtensions.h */; };
+		91C2FA261453F26500A5BB1A /* BaseExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 91C2FA241453F26500A5BB1A /* BaseExtension.h */; };
+		91C2FA271453F26500A5BB1A /* BaseExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 91C2FA251453F26500A5BB1A /* BaseExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91C2FA081453E93800A5BB1A /* libiOSDevice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSDevice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C2FA0B1453E93800A5BB1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		91C2FA0F1453E93800A5BB1A /* iOSDevice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSDevice-Prefix.pch"; sourceTree = "<group>"; };
+		91C2FA151453E94E00A5BB1A /* iOSDeviceExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSDeviceExtention.m; sourceTree = "<group>"; };
+		91C2FA171453E9A500A5BB1A /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		91C2FA241453F26500A5BB1A /* BaseExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseExtension.h; sourceTree = "<group>"; };
+		91C2FA251453F26500A5BB1A /* BaseExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseExtension.m; sourceTree = "<group>"; };
+		AF811C0D14D220B1008F6AEB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91C2FA051453E93800A5BB1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91C2F9FD1453E93800A5BB1A = {
+			isa = PBXGroup;
+			children = (
+				AF811C0D14D220B1008F6AEB /* CoreFoundation.framework */,
+				91C2FA241453F26500A5BB1A /* BaseExtension.h */,
+				91C2FA251453F26500A5BB1A /* BaseExtension.m */,
+				91C2FA171453E9A500A5BB1A /* FlashRuntimeExtensions.h */,
+				91C2FA151453E94E00A5BB1A /* iOSDeviceExtention.m */,
+				91C2FA0D1453E93800A5BB1A /* iOSDevice */,
+				91C2FA0A1453E93800A5BB1A /* Frameworks */,
+				91C2FA091453E93800A5BB1A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91C2FA091453E93800A5BB1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91C2FA081453E93800A5BB1A /* libiOSDevice.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91C2FA0A1453E93800A5BB1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C2FA0B1453E93800A5BB1A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91C2FA0D1453E93800A5BB1A /* iOSDevice */ = {
+			isa = PBXGroup;
+			children = (
+				91C2FA0E1453E93800A5BB1A /* Supporting Files */,
+			);
+			path = iOSDevice;
+			sourceTree = "<group>";
+		};
+		91C2FA0E1453E93800A5BB1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				91C2FA0F1453E93800A5BB1A /* iOSDevice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		91C2FA061453E93800A5BB1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C2FA181453E9A500A5BB1A /* FlashRuntimeExtensions.h in Headers */,
+				91C2FA261453F26500A5BB1A /* BaseExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		91C2FA071453E93800A5BB1A /* iOSDevice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91C2FA121453E93800A5BB1A /* Build configuration list for PBXNativeTarget "iOSDevice" */;
+			buildPhases = (
+				91C2FA041453E93800A5BB1A /* Sources */,
+				91C2FA051453E93800A5BB1A /* Frameworks */,
+				91C2FA061453E93800A5BB1A /* Headers */,
+				91C2FA191453EC9600A5BB1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSDevice;
+			productName = iOSDevice;
+			productReference = 91C2FA081453E93800A5BB1A /* libiOSDevice.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91C2F9FF1453E93800A5BB1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Ishop;
+			};
+			buildConfigurationList = 91C2FA021453E93800A5BB1A /* Build configuration list for PBXProject "iOSDevice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 91C2F9FD1453E93800A5BB1A;
+			productRefGroup = 91C2FA091453E93800A5BB1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91C2FA071453E93800A5BB1A /* iOSDevice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91C2FA191453EC9600A5BB1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91C2FA041453E93800A5BB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C2FA161453E94E00A5BB1A /* iOSDeviceExtention.m in Sources */,
+				91C2FA271453F26500A5BB1A /* BaseExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		91C2FA101453E93800A5BB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		91C2FA111453E93800A5BB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		91C2FA131453E93800A5BB1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				DSTROOT = /tmp/iOSDevice.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSDevice/iOSDevice-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		91C2FA141453E93800A5BB1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				DSTROOT = /tmp/iOSDevice.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSDevice/iOSDevice-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = iphoneos;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91C2FA021453E93800A5BB1A /* Build configuration list for PBXProject "iOSDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C2FA101453E93800A5BB1A /* Debug */,
+				91C2FA111453E93800A5BB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91C2FA121453E93800A5BB1A /* Build configuration list for PBXNativeTarget "iOSDevice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C2FA131453E93800A5BB1A /* Debug */,
+				91C2FA141453E93800A5BB1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91C2F9FF1453E93800A5BB1A /* Project object */;
+}

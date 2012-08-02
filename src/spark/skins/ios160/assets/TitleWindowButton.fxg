@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="5" scaleGridRight="122" scaleGridTop="5" scaleGridBottom="37">
+      <Path y="37" alpha="0.9" winding="nonZero" data="M122 5 5 5C2.24316 5 0 2.75684 0 0L0 1C0 3.75684 2.24316 6 5 6L122 6C124.758 6 127 3.75684 127 1L127 0C127 2.75684 124.758 5 122 5Z">
+        <fill>
+          <SolidColor color="#333F5F"/>
+        </fill>
+      </Path>
+      <Path winding="nonZero" data="M122 1C124.209 1 126 2.79102 126 5L126 37C126 39.209 124.209 41 122 41L5 41C2.79102 41 1 39.209 1 37L1 5C1 2.79102 2.79102 1 5 1L122 1ZM122 0 5 0C2.24316 0 0 2.24316 0 5L0 37C0 39.7568 2.24316 42 5 42L122 42C124.757 42 127 39.7568 127 37L127 5
+C127 2.24316 124.757 0 122 0L122 0Z">
+        <fill>
+          <SolidColor color="#0D1327"/>
+        </fill>
+      </Path>
+      <Path x="1" y="1" alpha="0.9" winding="nonZero" data="M121 0 4 0C1.79102 0 0 1.79102 0 4L0 5C0 2.79102 1.79102 1 4 1L121 1C123.209 1 125 2.79102 125 5L125 4C125 1.79102 123.209 0 121 0Z">
+        <fill>
+          <SolidColor color="#838A9E"/>
+        </fill>
+      </Path>
+
+      <!-- scale grid fix -->
+      <Rect width="127" height="43">
+        <fill>
+          <SolidColor color="#000000" alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

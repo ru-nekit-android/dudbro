@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	tabBarVisible="false"
+	actionBarVisible="false"
+	styleName="loginStyle"
+	>
+
+	
+	<s:Scroller id="scroller" width="100%" height="100%" horizontalScrollPolicy="off" touchDelay="0">
+		<s:Group id="layoutContainer" right="0" left="0" bottom="0" top="0">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout paddingRight="10" paddingLeft="10" paddingTop="0" paddingBottom="0" gap="4"/>
+			</s:layout>
+			<s:SkinnableContainer id="mainContainer" width="100%" skinClass="spark.skins.form.FormContainerSkin">
+				<s:SkinnableContainer id="titleContainer" width="100%">
+					<components:LabelDisplayComponent text="Авторизация" id="titleLabel"/>
+				</s:SkinnableContainer>
+				<components:HLine/>
+				<s:SkinnableContainer id="passwordContainer" width="100%">
+					<s:layout>
+						<layouts:MultiDPIVerticalLayout paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10"/>
+					</s:layout>
+					<s:TextInput id="password" width="100%" displayAsPassword="true" prompt="Пароль" 
+								 returnKeyLabel="go"/>
+				</s:SkinnableContainer>
+			</s:SkinnableContainer>
+			<s:Spacer height="4"/>
+			<s:Button id="loginCall" label="Вход" width="100%"/>
+			<s:Spacer id="bottomSpacer"/>
+		</s:Group>	
+	</s:Scroller>
+	
+</s:View>

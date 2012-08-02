@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:SparkSkin 
+	minWidth="112"
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:fb="http://ns.adobe.com/flashbuilder/2009"
+	alpha.disabled="0.5"
+	blendMode="normal"
+	xmlns:flexpad="com.flexpad.*">
+	
+	<fx:Metadata>
+		<![CDATA[ 
+		[HostComponent("com.flexpad.List")]
+		]]>
+	</fx:Metadata>
+	
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="disabled"/>
+	</s:states>
+	
+	<fx:Script>
+		<![CDATA[
+			
+			import spark.renderers.MainMenuItemRenderer;
+			
+			private static const ir:ClassFactory = new ClassFactory();
+			
+			override protected function createChildren():void
+			{
+				ir.generator = MainMenuItemRenderer;
+				dataGroup.itemRenderer = ir;
+				super.createChildren();
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:Scroller id="scroller"
+				left="0" right="0" top="0" bottom="0"
+				minViewportInset="1"
+				hasFocusableChildren="false">
+		<s:DataGroup id="dataGroup">
+			<s:layout>
+				<s:VerticalLayout 
+					horizontalAlign="contentJustify"
+					gap="0"
+					requestedMinRowCount="5"/>
+			</s:layout>
+		</s:DataGroup>
+	</s:Scroller>
+</s:SparkSkin>

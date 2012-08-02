@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="10" scaleGridRight="244" scaleGridTop="10" scaleGridBottom="74">
+      <Path x="0.998047" y="1" winding="nonZero" data="M243 82.002 9 82.002C4.03906 82.002 0 77.9648 0 73.002L0 9C0 4.03711 4.03906 0 9 0L243 0C247.966 0 252.004 4.03711 252.004 9L252.004 73.002C252.004 77.9648 247.966 82.002 243 82.002L243 82.002Z">
+        <fill>
+          <LinearGradient x="126.002" y="0" scaleX="82.002" rotation="90">
+            <GradientEntry ratio="0" color="#6B738B"/>
+            <GradientEntry ratio="0.275314" color="#394564"/>
+            <GradientEntry ratio="0.399032" color="#2B3859"/>
+            <GradientEntry ratio="0.5" color="#253254"/>
+            <GradientEntry ratio="0.5" color="#081538"/>
+            <GradientEntry ratio="0.805106" color="#09163A"/>
+            <GradientEntry ratio="1" color="#0E1C41"/>
+          </LinearGradient>
+        </fill>
+      </Path>
+      <Rect width="254" height="86">
+        <fill>
+          <SolidColor alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

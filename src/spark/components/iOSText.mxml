@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Label xmlns:fx="http://ns.adobe.com/mxml/2009"
+		 xmlns:s="library://ns.adobe.com/flex/spark"
+		 xmlns:mx="library://ns.adobe.com/flex/mx"
+		 focusEnabled="false">
+	<s:filters>
+		<s:DropShadowFilter 
+			id="shadow"
+			angle="-90"
+			alpha="1"
+			distance="1"
+			blurX="0"
+			blurY="0"/>
+	</s:filters>
+	
+	<fx:Script>
+		<![CDATA[
+			import ru.nekit.disn.model.dpi.DPI;
+			
+			override protected function childrenCreated():void
+			{
+				super.childrenCreated();
+				shadow.distance = DPI.instance.getSize(1, 1, 2);
+				shadow.color = getStyle("textShadowColor");
+			}
+			
+		]]>
+	</fx:Script>
+</s:Label>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="10" scaleGridRight="244" scaleGridTop="10" scaleGridBottom="74">
+      <Path y="74" alpha="0.9" winding="nonZero" data="M244 10 10 10C4.48633 10 0 5.51367 0 0L0 2C0 7.51367 4.48633 12 10 12L244 12C249.516 12 254 7.51367 254 2L254 0C254 5.51367 249.516 10 244 10Z">
+        <fill>
+          <SolidColor color="#333F5F"/>
+        </fill>
+      </Path>
+      <Path winding="nonZero" data="M244 2C248.418 2 252 5.58203 252 10L252 74C252 78.418 248.418 82 244 82L10 82C5.58203 82 2 78.418 2 74L2 10C2 5.58203 5.58203 2 10 2L244 2ZM244 0 10 0C4.48633 0 0 4.48633 0 10L0 74C0 79.5137 4.48633 84 10 84L244 84C249.514 84 254 79.5137 254 74
+L254 10C254 4.48633 249.514 0 244 0L244 0Z">
+        <fill>
+          <SolidColor color="#0D1327"/>
+        </fill>
+      </Path>
+      <Path x="2" y="2" alpha="0.9" winding="nonZero" data="M242 0 8 0C3.58203 0 0 3.58203 0 8L0 10C0 5.58203 3.58203 2 8 2L242 2C246.418 2 250 5.58203 250 10L250 8C250 3.58203 246.418 0 242 0Z">
+        <fill>
+          <SolidColor color="#838A9E"/>
+        </fill>
+      </Path>
+      <Rect width="254" height="86">
+        <fill>
+          <SolidColor alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="ru/nekit/ane/NetworkInfo/NetworkInterface" mod="1327643324000" signatureChecksum="1574662204" >
+        <def id="ru.nekit.ane.NetworkInfo:NetworkInterface" /> 
+        <dep id="ru.nekit.ane.NetworkInfo:InterfaceAddress" type="e" /> 
+        <dep id="__AS3__.vec:Vector" type="e" /> 
+        <dep id="ru.nekit.ane.NetworkInfo:InterfaceAddress" type="s" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="ru/nekit/ane/NetworkInfo/NetworkInfo" mod="1327639315000" signatureChecksum="1453411751" >
+        <def id="ru.nekit.ane.NetworkInfo:NetworkInfo" /> 
+        <dep id="__AS3__.vec:Vector" type="e" /> 
+        <dep id="ru.nekit.ane.NetworkInfo:NetworkInterface" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="__AS3__.vec:Vector" type="s" /> 
+        <dep id="ru.nekit.ane.NetworkInfo:NetworkInterface" type="s" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_8519e59578bfb102303187415f04c3d2a8cb46593f20a23a6cac7b37a807d7a4_flash_display_Sprite" mod="1327657759806" signatureChecksum="1329690877" >
+        <def id="_8519e59578bfb102303187415f04c3d2a8cb46593f20a23a6cac7b37a807d7a4_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <script name="ru/nekit/ane/NetworkInfo/InterfaceAddress" mod="1327657754000" signatureChecksum="2458145261" >
+        <def id="ru.nekit.ane.NetworkInfo:InterfaceAddress" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="7a88e82ca7bd88b0042a429fad85f8b44c62f5c644202a61a0798c038e87169b"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	styleName="friendshipRequestAddStyle"
+	title="Запрос на дружбу"
+	>
+	
+	<s:navigationContent>
+		<viewComponents:BackButton id="backCall" label="Назад"/>
+	</s:navigationContent>
+	
+	<s:SkinnableContainer id="mainContainer" width="100%" height="100%">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingRight="10" paddingLeft="10" paddingTop="10" paddingBottom="20" gap="5"/>
+		</s:layout>
+		<s:TextArea id="field" width="100%" height="100%"
+					styleName="textAreaStyle" 
+					returnKeyLabel="go"/>
+		<components:HLine/>
+		<s:Group width="100%">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="0" paddingLeft="0" paddingTop="4" paddingBottom="0" gap="5"/>
+			</s:layout>
+			<s:Button label="Отмена" id="cancelCall" width="100%" needsSoftKeyboard="true" />
+			<s:Button label="Отправить" id="requestCall" width="100%" needsSoftKeyboard="true"/>
+		</s:Group>
+	</s:SkinnableContainer>
+	
+</s:View>

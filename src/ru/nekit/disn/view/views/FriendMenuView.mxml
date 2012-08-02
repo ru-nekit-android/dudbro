@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	styleName="friendMenuStyle"
+	title="Друзья" xmlns:view="ru.nekit.disn.view.*" 
+	>
+	
+	<s:actionContent>
+		<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin"  backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponents:MainMenuButton id="mainMenu"/>
+		</s:SkinnableContainer>
+	</s:actionContent>
+	
+	<s:Scroller left="0" right="0" top="0" bottom="0">
+		<s:Group left="0" right="0" top="0" bottom="0">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout paddingRight="10" paddingLeft="10" paddingBottom="10" gap="10" verticalAlign="middle"/>
+			</s:layout>
+			<s:SkinnableContainer width="100%" skinClass="spark.skins.form.FormContainerSkin">
+				<s:ButtonBar
+					id="menu"
+					labelField="label" 
+					styleName="buttonMenuStyle"
+					width="100%" 
+					height="100%"
+					>
+					<s:layout>
+						<layouts:MultiDPIVerticalLayout paddingTop="2" paddingRight="2" paddingLeft="2" paddingBottom="2" gap="1" variableRowHeight="false" rowHeight="50" horizontalAlign="contentJustify"/>
+					</s:layout>
+				</s:ButtonBar>
+			</s:SkinnableContainer>
+			<s:SkinnableContainer width="100%" skinClass="spark.skins.form.FormContainerSkin">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout paddingRight="0" paddingLeft="0" paddingBottom="0" paddingTop="0" gap="0"/>
+				</s:layout>
+				<s:Group>
+					<s:layout>
+						<layouts:MultiDPIVerticalLayout paddingLeft="8" paddingTop="10" paddingBottom="6"/>
+					</s:layout>
+					<components:LabelDisplayComponent text="Запросы на дружбу" styleName="buttonMenuTitleStyle"/>
+				</s:Group>
+				<s:ButtonBar
+					id="requestMenu"
+					labelField="label" 
+					styleName="buttonMenuStyle"
+					width="100%" 
+					height="100%"
+					>
+					<s:layout>
+						<layouts:MultiDPIVerticalLayout paddingTop="2" paddingRight="2" paddingLeft="2" paddingBottom="2" gap="1" variableRowHeight="false" rowHeight="50" horizontalAlign="contentJustify"/>
+					</s:layout>
+				</s:ButtonBar>
+			</s:SkinnableContainer>
+		</s:Group>
+	</s:Scroller>
+	
+</s:View>

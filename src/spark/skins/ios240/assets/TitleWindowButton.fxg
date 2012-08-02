@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="8" scaleGridRight="187" scaleGridTop="8" scaleGridBottom="56">
+      <Path y="56.7905" alpha="0.9" winding="nonZero" data="M187.323 7.6748 7.67725 7.6748C3.44434 7.6748 0 4.23145 0 0L0 1.53516C0 5.7666 3.44434 9.20947 7.67725 9.20947L187.323 9.20947C191.557 9.20947 195 5.7666 195 1.53516L195 0C195 4.23145 191.557 7.6748 187.323 7.6748Z">
+        <fill>
+          <SolidColor color="#333F5F"/>
+        </fill>
+      </Path>
+      <Path winding="nonZero" data="M187.323 1.53467C190.715 1.53467 193.465 4.28369 193.465 7.67432L193.465 56.7905C193.465 60.1812 190.715 62.9302 187.323 62.9302L7.67725 62.9302C4.28516 62.9302 1.53516 60.1812 1.53516 56.7905L1.53516 7.67432C1.53516 4.28369 4.28516 1.53467 7.67725
+ 1.53467L187.323 1.53467ZM187.323 0 7.67725 0C3.44434 0 0 3.44287 0 7.67432L0 56.7905C0 61.022 3.44434 64.4653 7.67725 64.4653L187.323 64.4653C191.556 64.4653 195 61.022 195 56.7905L195 7.67432C195 3.44287 191.556 0 187.323 0L187.323 0Z">
+        <fill>
+          <SolidColor color="#0D1327"/>
+        </fill>
+      </Path>
+      <Path x="1.53516" y="1.53467" alpha="0.9" winding="nonZero" data="M185.788 0 6.14209 0C2.75 0 0 2.74902 0 6.13965L0 7.6748C0 4.28418 2.75 1.53516 6.14209 1.53516L185.788 1.53516C189.18 1.53516 191.93 4.28418 191.93 7.6748L191.93 6.13965C191.93 2.74902 189.18 0 185.788 0Z">
+        <fill>
+          <SolidColor color="#838A9E"/>
+        </fill>
+      </Path>
+      <Rect width="195" height="66">
+        <fill>
+          <SolidColor alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

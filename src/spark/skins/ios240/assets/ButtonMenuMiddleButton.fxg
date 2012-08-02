@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="0" scaleGridRight="231" scaleGridTop="0" scaleGridBottom="57">
+      <Rect width="231" height="57">
+        <fill>
+          <SolidColor color="#FFFFFF"/>
+        </fill>
+      </Rect>
+      <Rect width="231" height="57">
+        <fill>
+          <SolidColor alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

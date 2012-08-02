@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Button xmlns:fx="http://ns.adobe.com/mxml/2009" 
+		  xmlns:s="library://ns.adobe.com/flex/spark"
+		  styleName="messageButtonStyle" label="">
+	<s:icon.up>
+		<s:MultiDPIBitmapSource source160dpi="@Embed(source='message2160.png')" source240dpi="@Embed(source='message2240.png')" source320dpi="@Embed(source='message2320.png')"/>
+	</s:icon.up>
+	<s:icon.down>
+		<s:MultiDPIBitmapSource source160dpi="@Embed(source='message160.png')" source240dpi="@Embed(source='message240.png')" source320dpi="@Embed(source='message320.png')"/>
+	</s:icon.down>
+	
+	<s:states>
+		<s:State name="up"/>
+		<s:State name="down"/>
+	</s:states>
+	
+	<fx:Script>
+		<![CDATA[
+			import mx.graphics.BitmapScaleMode;
+			
+			import ru.nekit.disn.model.dpi.DPI;
+			
+			override protected function createChildren():void
+			{
+				super.createChildren();
+				width = DPI.instance.getAutoSize(54);
+				if(iconDisplay){
+					iconDisplay.scaleMode = BitmapScaleMode.LETTERBOX;
+				}
+			}
+			
+			override protected function commitProperties():void
+			{
+				super.commitProperties();
+				var state:String =  getCurrentSkinState();
+				if( state != "over" )
+				{
+					currentState = state;
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+</s:Button>

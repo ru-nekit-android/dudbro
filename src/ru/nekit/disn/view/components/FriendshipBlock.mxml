@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	styleName="friendshipBlockStyle"
+	width="100%">
+	
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="requestFromMe"/>
+		<s:State name="requestToMe"/>
+		<s:State name="friend"/>
+		<s:State name="confirmed"/>
+		<s:State name="aborted"/>
+	</s:states>
+	
+	<s:layout>
+		<layouts:MultiDPIVerticalLayout paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="8"/>
+	</s:layout>
+	
+	<s:Group width="100%" includeIn="requestFromMe">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingTop="4" paddingBottom="6" gap="8"/>
+		</s:layout>
+		<components:LabelDisplayComponent text="Вы послали запрос на дружбу:"/>
+		<s:Button id="requestRemoveCall" label="Удалить запрос" width="100%"/>
+	</s:Group>
+	
+	<s:Group width="100%" includeIn="normal">
+		<s:layout>
+			<layouts:MultiDPIHorizontalLayout paddingTop="4" paddingBottom="4" gap="8"/>
+		</s:layout>
+		<s:Button id="requestCall" label="Добавить в друзья" width="100%"/>
+		<!--<components:VLine/>-->
+	</s:Group>
+	
+	<s:Group width="100%" includeIn="confirmed">
+		<s:layout>
+			<layouts:MultiDPIHorizontalLayout paddingTop="6" paddingBottom="6" verticalAlign="middle" horizontalAlign="center"/>
+		</s:layout>
+		<components:LabelDisplayComponent text="Теперь вы друзья!"/>
+	</s:Group>
+	
+	<s:Group width="100%" includeIn="aborted">
+		<s:layout>
+			<layouts:MultiDPIHorizontalLayout paddingTop="6" paddingBottom="6" verticalAlign="middle" horizontalAlign="center"/>
+		</s:layout>
+		<components:LabelDisplayComponent text="Вам отказано!"/>
+	</s:Group>
+	
+	<s:Group width="100%" includeIn="friend">
+		<s:layout>
+			<layouts:MultiDPIHorizontalLayout paddingTop="6" paddingBottom="6" verticalAlign="middle" horizontalAlign="center"/>
+		</s:layout>
+		<components:LabelDisplayComponent text="Ваш друг"/>
+	</s:Group>
+	
+	<s:Group width="100%" includeIn="requestToMe">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingTop="4" paddingBottom="6" gap="8"/>
+		</s:layout>
+		<components:iOSText id="requestField" width="100%" maxDisplayedLines="2"/>
+		<s:Group width="100%">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout gap="8"/>
+			</s:layout>
+			<s:Button id="requestAbortCall" label="Отменить" width="100%"/>
+			<s:Button id="requestConfirmCall" label="Принять" width="100%"/>
+		</s:Group>	
+	</s:Group>
+	
+</s:Group>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:fb="http://ns.adobe.com/flashbuilder/2009"
+	xmlns:components="spark.components.*"
+	alpha.disabled="0.5">
+	
+	<fx:Metadata>
+		<![CDATA[ 
+		[HostComponent("spark.components.SkinnableContainer")]
+		]]>
+	</fx:Metadata> 
+	
+	<s:states>
+		<s:State name="normal" />
+		<s:State name="disabled" />
+	</s:states>
+	
+	<s:SkinnableContainer left="0" right="0" top="0" bottom="0" minWidth="0" minHeight="0" skinClass="spark.skins.form.TitlePartFormSkin">
+		<s:Group id="contentGroup" left="0" right="0" top="0" bottom="0" minWidth="0" minHeight="0"/>
+		<components:FormTitleShadow/>
+	</s:SkinnableContainer>
+</s:Skin>

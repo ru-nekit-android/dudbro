@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="40" scaleGridRight="268" scaleGridTop="20" scaleGridBottom="56">
+      <Rect width="308" height="76" radiusX="9.99753" radiusY="9.99753">
+        <fill>
+          <SolidColor color="#FFFFFF"/>
+        </fill>
+         <filters>
+          <DropShadowFilter blurX="6" blurY="6" quality="2" alpha="0.55" angle="90" distance="4"/>
+        </filters>
+      </Rect>
+      <Rect width="308" height="76">
+        <fill>
+          <SolidColor alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

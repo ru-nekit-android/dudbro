@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="20" scaleGridRight="288" scaleGridTop="20" scaleGridBottom="56">
+      <Rect width="308" height="76" topLeftRadiusX="16" topLeftRadiusY="16" topRightRadiusX="16" topRightRadiusY="16">
+        <fill>
+          <LinearGradient x="154" y="0" scaleX="76" rotation="90">
+            <GradientEntry ratio="0" color="#DEDFE2"/>
+           	<GradientEntry ratio="1" color="#B4B8BF"/>
+          </LinearGradient>
+        </fill>
+      </Rect>
+
+      <!-- scale grid fix -->
+      <Rect width="308" height="76">
+        <fill>
+          <SolidColor alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

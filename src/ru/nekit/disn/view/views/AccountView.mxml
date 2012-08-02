@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	styleName="birthdayStyle"
+	title="День рождения"
+	>
+	
+	<s:navigationContent>
+		<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponents:CancelButton id="cancelCall"/>
+		</s:SkinnableContainer>
+	</s:navigationContent>
+	
+	<s:actionContent>
+		<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponents:SaveButton id="saveCall"/>
+		</s:SkinnableContainer>	
+	</s:actionContent>
+	
+	<s:layout>
+		<layouts:MultiDPIVerticalLayout paddingRight="1" paddingLeft="1" paddingBottom="10" gap="5"/>
+	</s:layout>
+	
+	<fx:Declarations>
+		<s:Group id="menuContent" width="100%">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout paddingBottom="0" paddingTop="0" paddingRight="0" paddingLeft="0" gap="20" horizontalAlign="center"/>
+			</s:layout>
+			<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin" width="100%" backgroundAlpha=".3">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout paddingBottom="1" paddingLeft="1" paddingRight="1" paddingTop="1"/>
+				</s:layout>
+				<s:SpinnerListContainer width="100%">
+					<s:SpinnerList  id="accountTypeChoice" width="100%"/>
+				</s:SpinnerListContainer>
+			</s:SkinnableContainer>
+			<s:Group width="100%">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout gap="6" paddingBottom="0" paddingTop="0" paddingRight="0" paddingLeft="0" horizontalAlign="center"/>
+				</s:layout>
+				<s:ViewMenuItem id="okCall" label="Установить" width="100%" styleName="menuOkButtonStyle"/>
+				<s:ViewMenuItem id="cancelDateCall" label="Отмена" width="100%" styleName="menuCancelButtonStyle"/>
+			</s:Group>
+		</s:Group>
+	</fx:Declarations>
+	
+	<s:SkinnableContainer id="titleContainer" width="100%">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingRight="15" paddingLeft="15" paddingTop="15" paddingBottom="10" gap="10" horizontalAlign="center"/>
+		</s:layout>
+		<s:SkinnableContainer id="accountContainer" skinClass="spark.skins.form.FormContainerSkin" width="100%" >
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingLeft="15" paddingRight="15" paddingTop="15" paddingBottom="15"/>
+			</s:layout>
+			<components:LabelDisplayComponent id="account" width="100%"/>
+		</s:SkinnableContainer>
+		<s:TextInput id="address" width="100%" prompt="Адресс" returnKeyLabel="done"/>
+	</s:SkinnableContainer>
+	
+</s:View>

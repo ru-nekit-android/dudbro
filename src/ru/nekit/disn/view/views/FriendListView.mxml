@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	styleName="userListStyle"
+	>
+	
+	<s:states>
+		<s:State name="normal"/>
+		<s:State name="empty"/>
+	</s:states>
+	
+	<s:navigationContent>
+		<viewComponents:BackButton id="backCall" label="Друзья"/>
+	</s:navigationContent>
+	
+	<s:actionContent>
+		<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponents:MainMenuButton id="mainMenu"/>
+		</s:SkinnableContainer>
+	</s:actionContent>
+	
+	<fx:Script>
+		<![CDATA[
+			import ru.nekit.disn.model.dataProvider.DataProviderFunction;
+			
+			[Bindable]
+			public static var dataProviderFunction:DataProviderFunction;
+			
+		]]>
+	</fx:Script>
+	
+	<s:Group id="layoutContainer" width="100%" height="100%">
+		<s:List id="friendList" width="100%" height="100%" includeIn="normal">
+			<s:layout>
+				<s:VerticalLayout gap="0"/>
+			</s:layout>
+			<s:itemRenderer>
+				<fx:Component>
+					<s:IconItemRenderer
+						messageFunction="{FriendListView.dataProviderFunction.messageFunction}"
+						labelFunction="{FriendListView.dataProviderFunction.labelFunction}"
+						iconFunction="{FriendListView.dataProviderFunction.iconFunction}"
+						paddingTop="8" paddingBottom="8" verticalGap="6" width="100%"
+						/>
+				</fx:Component>
+			</s:itemRenderer>
+		</s:List>
+		
+		<s:Scroller width="100%" height="100%" includeIn="empty">
+			<s:Group>
+				<components:LabelDisplayComponent text="Список пуст" horizontalCenter="0" verticalCenter="0"/>
+			</s:Group>
+		</s:Scroller>
+		
+	</s:Group>
+	
+</s:View>

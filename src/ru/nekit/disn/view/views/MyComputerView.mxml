@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	xmlns:layouts="spark.layouts.*" 
+	tabBarVisible="false"
+	title="Мой компьютер"
+	styleName="myComputerStyle"
+	>
+	
+	<s:actionContent>
+		<s:SkinnableContainer id="actionContainer" skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponents:MainMenuButton id="mainMenu"/>
+		</s:SkinnableContainer>
+	</s:actionContent>
+	
+	<s:layout>
+		<layouts:MultiDPIVerticalLayout paddingRight="0" paddingLeft="0" paddingBottom="0" gap="10"/>
+	</s:layout>
+	
+</s:View>

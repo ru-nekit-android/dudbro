@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:ItemRenderer 
+	width="100%"
+	xmlns:fx="http://ns.adobe.com/mxml/2009"
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:mx="library://ns.adobe.com/flex/mx"
+	xmlns:components="spark.components.*"
+	xmlns:layouts="spark.layouts.*"
+	xmlns:flexpad="com.flexpad.*"
+	autoDrawBackground="false"
+	minHeight="0">
+	
+	<fx:Script>
+		<![CDATA[
+			
+			import ru.nekit.disn.model.dpi.DPI;
+			import ru.nekit.disn.model.viewDataItem.MenuDataItem;
+			
+			override public function get data():Object
+			{
+				return super.data;
+			}
+			override protected function createChildren():void
+			{
+				super.createChildren();
+				minHeight = DPI.instance.getAutoSize(38);
+			}
+			
+			override public function set data(value:Object):void
+			{
+				super.data = value;
+				var menuItem:MenuDataItem = value as MenuDataItem;
+				if(data)
+				{
+					labelField.text = menuItem.label;
+					iconHolder.source = menuItem.icon;
+					var hintValue:String = menuItem.hint;
+					if( hintValue )
+					{
+						hintHolder.visible = true;
+						hint.text = hintValue;
+					}
+					else
+					{
+						hintHolder.visible = false;
+					}
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:states>
+		<s:State name="normal" />
+		<s:State name="down"  />
+		<s:State name="selected" />
+	</s:states>
+	
+	<s:Rect top="0" bottom="0" left="0" right="0">
+		<s:fill>
+			<s:SolidColor alpha="0" />
+		</s:fill>
+		<s:fill.down>
+			<s:LinearGradient rotation="-90">
+				<s:GradientEntry color="0x015fe6" alpha="0.6" />
+				<s:GradientEntry color="0x058cf5" alpha="0.6" />
+			</s:LinearGradient>
+		</s:fill.down>
+		<s:fill.selected>
+			<s:LinearGradient rotation="-90">
+				<s:GradientEntry color="0x015fe6" />
+				<s:GradientEntry color="0x058cf5" />
+			</s:LinearGradient>
+		</s:fill.selected>
+	</s:Rect>
+	
+	<s:BitmapImage id="iconHolder" smooth="true" scaleMode="letterbox" right="7" top="7" bottom="7" />
+	
+	<components:LabelDisplayComponent 
+		right="10" verticalCenter="0"
+		id="labelField"
+		/>
+	
+	<s:SkinnableContainer id="hintHolder" verticalCenter="0" skinClass="spark.skins.containers.BadgeContainerSkin" backgroundColor="0xff8800">	
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingLeft="12" paddingTop="6" paddingBottom="6" paddingRight="12"/>
+		</s:layout>
+		<components:LabelDisplayComponent id="hint" styleName="mainMenuItemHintStyle"/>
+	</s:SkinnableContainer>
+	
+	<components:HLineTwo/>
+	
+</s:ItemRenderer>

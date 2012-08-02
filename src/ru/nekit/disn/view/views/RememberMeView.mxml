@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:layouts="spark.layouts.*" 
+	xmlns:components="spark.components.*" 
+	tabBarVisible="false"
+	actionBarVisible="false"
+	styleName="rememberMeStyle"
+	>
+	
+	<s:Scroller id="scroller" width="100%" height="100%">
+		<s:Group id="layoutContainer" width="100%" height="100%">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout paddingRight="10" paddingLeft="10" gap="4" verticalAlign="middle"/>
+			</s:layout>
+			<s:SkinnableContainer id="mainContainer" width="100%" skinClass="spark.skins.form.FormContainerSkin">
+				<s:SkinnableContainer id="titleContainer" height="126" width="100%">
+					<s:Label text="Запомнить"/>
+				</s:SkinnableContainer>
+				
+				<components:HLine/>
+				
+				<s:SkinnableContainer height="106" width="100%" styleName="rememberMeFieldFormStyle">
+					<s:layout>
+						<layouts:MultiDPIVerticalLayout paddingBottom="10" paddingLeft="10" paddingRight="10" paddingTop="10" verticalAlign="middle"/>
+					</s:layout>
+					<s:CheckBox label="Запомнить" width="100%" id="remember" verticalCenter="0"/>
+				</s:SkinnableContainer>
+			</s:SkinnableContainer>
+			<s:Spacer height="10"/>
+			<s:Button id="okCall" label="Готово" height="96" width="100%"/>
+		</s:Group>
+	</s:Scroller>
+	
+</s:View>

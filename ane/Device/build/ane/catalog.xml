@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<swc xmlns="http://www.adobe.com/flash/swccatalog/9">
+  <versions>
+    <swc version="1.2" />
+    <flex version="4.6.0" build="23201" minimumSupportedVersion="3.0.0" />
+  </versions>
+  <features>
+    <feature-script-deps />
+    <feature-files />
+  </features>
+  <libraries>
+    <library path="library.swf">
+      <script name="ru/nekit/ane/Device" mod="1331274585000" signatureChecksum="1493786365" >
+        <def id="ru.nekit.ane:Device" /> 
+        <dep id="flash.errors:IllegalOperationError" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="e" /> 
+        <dep id="Error" type="e" /> 
+        <dep id="flash.external:ExtensionContext" type="s" /> 
+        <dep id="Error" type="s" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="Object" type="i" /> 
+      </script>
+      <script name="_c2bc0b42ae9ca416b947fadaa469ee106500d6588bfaa0753dceed3a0f8fd57e_flash_display_Sprite" mod="1331274585553" signatureChecksum="1254653207" >
+        <def id="_c2bc0b42ae9ca416b947fadaa469ee106500d6588bfaa0753dceed3a0f8fd57e_flash_display_Sprite" /> 
+        <dep id="flash.system:Security" type="e" /> 
+        <dep id="AS3" type="n" /> 
+        <dep id="flash.display:Sprite" type="i" /> 
+      </script>
+      <digests>
+        <digest type="SHA-256" signed="false" value="4ca064dce3cc504c32e63e1cb19ff82e6740ac513968611792d99c02ec94fe28"   />
+      </digests>
+    </library>
+  </libraries>
+  <files>
+  </files>
+</swc>

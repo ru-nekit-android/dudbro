@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	xmlns:components="spark.components.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	xmlns:layouts="spark.layouts.*" 
+	tabBarVisible="false"
+	title="Университет"
+	styleName="universityStyle"
+	>
+	
+	<s:navigationContent>
+		<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponents:CancelButton id="cancelCall"/>
+		</s:SkinnableContainer>
+	</s:navigationContent>
+	
+	<s:actionContent>
+		<s:SkinnableContainer skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha="0">
+			<s:layout>
+				<layouts:MultiDPIHorizontalLayout paddingRight="1" paddingLeft="1" paddingTop="1" paddingBottom="1"/>
+			</s:layout>
+			<viewComponents:SaveButton id="saveCall"/>
+		</s:SkinnableContainer>	
+	</s:actionContent>
+	
+	<s:layout>
+		<layouts:MultiDPIVerticalLayout paddingRight="0" paddingLeft="0" paddingBottom="0" gap="10"/>
+	</s:layout>
+	
+	<s:SkinnableContainer id="titleContainer" width="100%" height="100%">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingRight="10" paddingLeft="10" paddingBottom="10" paddingTop="10" gap="5"/>
+		</s:layout>		
+		<s:TextInput id="university" width="100%" prompt="Университет"
+					 autoCorrect="false"
+					 autoCapitalize="sentence"
+					 returnKeyLabel="done"/>
+		<s:TextArea id="universityDiscription" width="100%" height="100%" prompt="Полное название университета"
+					autoCorrect="false"
+					autoCapitalize="sentence"
+					returnKeyLabel="done"/>
+		<!--<components:HLine/>
+		<s:Group width="100%">
+		<s:layout>
+		<layouts:MultiDPIVerticalLayout paddingBottom="5" paddingTop="5" paddingLeft="0" paddingRight="0"/>
+		</s:layout>
+		<s:CheckBox label="Доступно всем?" id="rule" width="100%" needsSoftKeyboard="true"/>
+		</s:Group>-->
+	</s:SkinnableContainer>
+	
+</s:View>

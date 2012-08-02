@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group 
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark"
+	width="100%" 
+	>
+	
+	<fx:Script>
+		<![CDATA[
+			
+			import mx.core.DPIClassification;
+			import mx.core.FlexGlobals;
+			
+			override protected function  createChildren():void
+			{
+				
+				super.createChildren();
+				switch( FlexGlobals.topLevelApplication.applicationDPI )
+				{
+					
+					case DPIClassification.DPI_160:
+						
+						topLineStroke.weight = 1;
+						bottomLineStroke.weight = 1;
+						bottomLine.y = 1;
+						
+						break;
+					
+					case DPIClassification.DPI_240:
+						
+						topLineStroke.weight = 1;
+						bottomLineStroke.weight = 1;
+						bottomLine.y = 1;
+						
+						break;
+					
+					
+					case DPIClassification.DPI_320:
+						
+						topLineStroke.weight = 2;
+						bottomLineStroke.weight = 2;
+						bottomLine.y = 2;
+						
+						break;
+				}
+			}
+			
+		]]>
+	</fx:Script>
+	<s:Line id="topLine" width="100%">
+		<s:stroke>
+			<s:LinearGradientStroke id="topLineStroke">
+				<s:entries>
+					<s:GradientEntry color="#333333" alpha="1" />
+					<s:GradientEntry color="#aaaaaa" alpha="1"/>
+					<s:GradientEntry color="#333333" alpha="1" />
+				</s:entries>
+			</s:LinearGradientStroke>
+		</s:stroke>
+	</s:Line>
+	<s:Line id="bottomLine" width="100%">
+		<s:stroke>
+			<s:LinearGradientStroke id="bottomLineStroke">
+				<s:entries>
+					<s:GradientEntry color="#B5B0A6" alpha="1" />
+					<s:GradientEntry color="#EBECED" alpha="1" />
+					<s:GradientEntry color="#B5B0A6" alpha="1" />
+				</s:entries>
+			</s:LinearGradientStroke>
+		</s:stroke>
+	</s:Line>
+</s:Group>

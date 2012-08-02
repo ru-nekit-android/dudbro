@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View
+	xmlns:fx="http://ns.adobe.com/mxml/2009" 
+	xmlns:s="library://ns.adobe.com/flex/spark" 
+	xmlns:layouts="spark.layouts.*"
+	xmlns:components="spark.components.*"
+	xmlns:viewComponents="ru.nekit.disn.view.components.*"
+	styleName="messageStyle"
+	skinClass="spark.skins.ios.EmptyViewSkin"
+	title="Сообщение"
+	>
+	
+	<fx:Script>
+		<![CDATA[
+			import ru.nekit.disn.model.dataProvider.DataProviderFunction;
+			import ru.nekit.disn.model.dpi.DPI;
+			
+			[Bindable]
+			public static var dataProviderFunction:DataProviderFunction;
+			
+			override protected function createChildren():void
+			{
+				super.createChildren();
+				topShadow.blurX = topShadow.blurY = DPI.instance.getAutoSize(18);
+				topShadow.distance = DPI.instance.getAutoSize(1);
+				//topShadow.top = -5*DPI.instance.getAutoSize(4);
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:states>
+		<s:State name="offline"/>
+		<s:State name="online"/>
+	</s:states>
+	
+	<s:navigationContent>
+		<viewComponents:BackButton id="backCall"/>
+	</s:navigationContent>
+	
+	<s:actionContent>
+		<s:BitmapImage includeIn="online">
+			<s:source>
+				<s:MultiDPIBitmapSource source160dpi="@Embed(source='online160.png')" source240dpi="@Embed(source='online240.png')" source320dpi="@Embed(source='online320.png')"/>
+			</s:source>
+		</s:BitmapImage>
+		<s:BitmapImage includeIn="offline">
+			<s:source>
+				<s:MultiDPIBitmapSource source160dpi="@Embed(source='offline160.png')" source240dpi="@Embed(source='offline240.png')" source320dpi="@Embed(source='offline320.png')"/>
+			</s:source>
+		</s:BitmapImage>
+	</s:actionContent>
+	
+	<fx:Declarations>
+		<s:Group id="menuContent" width="100%">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout gap="14" paddingBottom="0" paddingTop="0" paddingRight="0" paddingLeft="0" horizontalAlign="center"/>
+			</s:layout>
+			<components:LabelDisplayComponent text="Пользователь вне сети" styleName="menuTitleStyle"/>
+			<s:Group width="100%">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout gap="6" paddingBottom="0" paddingTop="0" paddingRight="0" paddingLeft="0" horizontalAlign="center"/>
+				</s:layout>
+				<s:ViewMenuItem id="smsCall" label="Отправить как смс" width="100%" styleName="menuSmsButtonStyle"/>
+			</s:Group>
+		</s:Group>
+	</fx:Declarations>
+	
+	<s:layout>
+		<layouts:MultiDPIVerticalLayout paddingLeft="0" paddingRight="0" paddingTop="-2" paddingBottom="0" gap="0" horizontalAlign="contentJustify"/>
+	</s:layout>
+	
+	<s:RectangularDropShadow  depth="2" id="topShadow" left="0" right="0" angle="90" alpha="1" color="0x000000"/>
+	
+	<s:Group id="listContainer" width="100%" height="100%" contentBackgroundColor="0x000000">
+		<s:layout>
+			<layouts:MultiDPIVerticalLayout paddingLeft="0" paddingRight="0"/>
+		</s:layout>
+		<s:Scroller  id="scroller" width="100%" height="100%">
+			<s:DataGroup id="list" width="100%" height="100%" opaqueBackground="0x333333">
+				<s:layout>
+					<layouts:MultiDPIVerticalLayout gap="4" paddingLeft="2" paddingRight="2" horizontalAlign="contentJustify" paddingTop="10"/>
+				</s:layout>
+			</s:DataGroup>
+		</s:Scroller>
+	</s:Group>
+	
+	<s:SkinnableContainer id="messageContainer" width="100%">
+		<s:layout>
+			<layouts:MultiDPIHorizontalLayout paddingTop="6" paddingBottom="6" paddingLeft="6" paddingRight="6" gap="6"/>
+		</s:layout>
+		<s:TextInput id="messageInput" width="100%" prompt="Написать сообщение..." autoCorrect="false" autoCapitalize="sentence"/>
+		<s:SkinnableContainer height="100%" skinClass="spark.skins.form.FormContainerSkin" backgroundAlpha=".3">
+			<s:layout>
+				<layouts:MultiDPIVerticalLayout paddingBottom="2" paddingLeft="2" paddingTop="2" paddingRight="2"/>
+			</s:layout>
+			<viewComponents:MessageButton id="sendCall" height="100%"/>
+		</s:SkinnableContainer>
+		
+	</s:SkinnableContainer>
+	
+</s:View>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" xmlns="http://ns.adobe.com/fxg/2008"
+  scaleGridLeft="15" scaleGridRight="216" scaleGridTop="15" scaleGridBottom="42">
+      <Rect width="231" height="57" bottomLeftRadiusX="7.5" bottomLeftRadiusY="7.5" bottomRightRadiusX="7.5" bottomRightRadiusY="7.5">
+        <fill>
+          <SolidColor color="#FFFFFF"/>
+        </fill>
+       <!--<filters>
+          <DropShadowFilter blurX="4" blurY="4" quality="2" alpha="0.55" angle="90" distance="3"/>
+        </filters>-->
+      </Rect>
+      <Path alpha="0.5" winding="nonZero" data="M223.5 0 7.5 0C3.35742 0 0 3.35742 0 7.5L0 9C0 4.85742 3.35742 1.5 7.5 1.5L223.5 1.5C227.642 1.5 231 4.85742 231 9L231 7.5C231 3.35742 227.642 0 223.5 0Z">
+        <fill>
+          <SolidColor color="#FFFFFF"/>
+        </fill>
+      </Path>
+      <Rect width="231" height="57">
+        <fill>
+          <SolidColor alpha="0"/>
+        </fill>
+      </Rect>
+</Graphic>

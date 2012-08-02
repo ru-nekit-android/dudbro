@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+
+ADOBE SYSTEMS INCORPORATED
+Copyright 2011 Adobe Systems Incorporated
+All Rights Reserved.
+
+NOTICE: Adobe permits you to use, modify, and distribute this file
+in accordance with the terms of the license agreement accompanying it.
+
+-->
+<Graphic version="2.0" ai:appVersion="15.0.2.399" ATE:version="1.0.0" flm:version="1.0.0" d:using="" xmlns="http://ns.adobe.com/fxg/2008" xmlns:ATE="http://ns.adobe.com/ate/2009" xmlns:ai="http://ns.adobe.com/ai/2009" xmlns:d="http://ns.adobe.com/fxg/2008/dt" xmlns:flm="http://ns.adobe.com/flame/2008"
+	scaleGridTop="45" scaleGridBottom="244" scaleGridLeft="207" scaleGridRight="208">
+      <Path x="1.5" y="1.5" winding="nonZero" ai:seqID="3" data="M397.5 256.5 13.498 256.5C6.05469 256.5 0 250.441 0 242.998L0 13.498C0 6.05566 6.05469 0 13.498 0L397.5 0C404.944 0 410.998 6.05566 410.998 13.498L410.998 242.998C410.998 250.441 404.944 256.5 397.5 256.5L397.5 256.5Z">
+        <fill>
+          <SolidColor color="#000F37"/>
+        </fill>
+      </Path>
+      <Path x="3" y="3" winding="nonZero" ai:seqID="4" data="M396 0 12 0C5.38281 0 0 5.38281 0 12L0 27.0088C48.1035 36.9404 121.609 41.792 204 41.792 286.389 41.792 359.896 36.9404 408 27.0088L408 12C408 5.38281 402.617 0 396 0Z">
+        <fill>
+          <LinearGradient x="204" y="41.792" scaleX="41.792" rotation="270">
+            <GradientEntry ratio="0.197802" color="#4B5673"/>
+            <GradientEntry ratio="0.456044" color="#4D5874"/>
+            <GradientEntry ratio="0.554945" color="#616982"/>
+            <GradientEntry ratio="0.89011" color="#7E859A"/>
+          </LinearGradient>
+        </fill>
+      </Path>
+      <Path winding="nonZero" ai:seqID="5" data="M399 0C407.284 0 414 6.7168 414 15L414 244.5C414 252.784 407.284 259.5 399 259.5L15 259.5C6.7168 259.5 0 252.784 0 244.5L0 15C0 6.7168 6.7168 0 15 0L399 0ZM399 3 15 3C8.38281 3 3 8.38281 3 15L3 244.5C3 251.117 8.38281 256.5 15 256.5L399 256.5
+C405.617 256.5 411 251.117 411 244.5L411 15C411 8.38281 405.617 3 399 3L399 3Z">
+        <fill>
+          <LinearGradient x="207" y="0" scaleX="259.5" rotation="90">
+            <GradientEntry ratio="0" color="#DBDDE4"/>
+            <GradientEntry ratio="1" color="#BBC1CD"/>
+          </LinearGradient>
+        </fill>
+      </Path>
+</Graphic>

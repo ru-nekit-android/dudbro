@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Skin xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:s="library://ns.adobe.com/flex/spark" 
+		xmlns:fb="http://ns.adobe.com/flashbuilder/2009" 
+		xmlns:components="spark.components.*"
+		alpha.disabled="0.5">
+	
+	<fx:Metadata>
+		<![CDATA[ 
+		[HostComponent("spark.components.Menu")]
+		]]>
+	</fx:Metadata> 
+	
+	<fx:Script fb:purpose="styling">
+		<![CDATA[
+			import mx.core.DPIClassification;
+			import mx.core.FlexGlobals;
+			import mx.utils.ColorUtil;
+			
+			import spark.effects.easing.Power;
+			import spark.effects.easing.Sine;
+			
+			/**
+			 * @private
+			 */
+			override protected function initializationComplete():void
+			{
+				super.initializationComplete();
+				
+				var borderWeight:uint;
+				var horizontalPadding:uint;
+				var verticalPadding:uint;
+				var gap:uint;
+				var glossHeight:uint;
+				
+				switch (applicationDPI)
+				{
+					case DPIClassification.DPI_320:
+					{
+						glossHeight = 98;
+						horizontalPadding = 36;
+						verticalPadding = 36;
+						gap = 12;
+						borderWeight = 2;
+						
+						break;
+					}
+					case DPIClassification.DPI_240:
+					{
+						glossHeight = 74;
+						horizontalPadding = 27;
+						verticalPadding = 27;
+						gap = 9;
+						borderWeight = 1;
+						
+						break;
+					}
+					default:
+					{
+						// default DPI_160
+						glossHeight = 49;
+						horizontalPadding = 18;
+						verticalPadding = 18;
+						gap = 6;
+						borderWeight = 1;
+						
+						break;
+					}
+				}
+				
+				fill.scaleX = glossHeight;
+				
+				chromeGroupLayout.paddingLeft = chromeGroupLayout.paddingRight = horizontalPadding;
+				chromeGroupLayout.paddingTop = chromeGroupLayout.paddingBottom = verticalPadding;
+				chromeGroupLayout.gap = gap * 1.5;
+				
+				contentGroupLayout.gap = gap;
+				
+			}
+			
+			public function get applicationDPI():int
+			{
+				return FlexGlobals.topLevelApplication.applicationDPI;
+			}
+			
+			override protected function measure():void
+			{
+				super.measure();
+				measuredHeight = 200;
+			}
+			
+			override protected function updateDisplayList(unscaledWidth:Number, unscaledHeight:Number):void
+			{
+				super.updateDisplayList(unscaledWidth, unscaledHeight);
+				
+				var contentBackgroundColor:uint = getStyle("contentBackgroundColor");
+				
+				fillRect.alpha = getStyle("contentBackgroundAlpha");
+				
+				fillEntry1.color = ColorUtil.adjustBrightness2(contentBackgroundColor, 15);
+				fillEntry2.color = ColorUtil.adjustBrightness2(contentBackgroundColor, 10);
+				fillEntry3.color = contentBackgroundColor;
+				fillEntry4.color = contentBackgroundColor;
+			}
+			
+		]]>
+	</fx:Script>
+	
+	<s:states>
+		<s:State name="normal"                          stateGroups="openedGroup"/>
+		<s:State name="closed"                          stateGroups="closedGroup"/>
+		<s:State name="disabled"                        stateGroups="openedGroup"/>
+		<s:State name="normalAndLandscape"              stateGroups="openedGroup, landscapeGroup"/>
+		<s:State name="closedAndLandscape"              stateGroups="closedGroup, landscapeGroup"/>
+		<s:State name="disabledAndLandscape"            stateGroups="openedGroup, landscapeGroup" />
+	</s:states>
+	
+	<s:transitions>
+		
+		<s:Transition fromState="closed" toState="normal" autoReverse="true">
+			<s:Parallel>
+				<s:Move target="{chromeGroup}" duration="300" yBy="{-chromeGroup.height}" yFrom="{hostComponent.height}" disableLayout="true" easer="{new Sine(1)}"/>
+			</s:Parallel>
+		</s:Transition>
+		
+		<s:Transition fromState="normal" toState="closed" autoReverse="true">
+			<s:Parallel>
+
+				<s:Move target="{chromeGroup}" duration="300" yBy="{chromeGroup.height}"  disableLayout="true" easer="{new Sine(1)}"/>
+			</s:Parallel>
+		</s:Transition>
+
+	</s:transitions>
+	
+	<s:Group id="chromeGroup"
+			 left="0"
+			 right="0"
+			 bottom.openedGroup="0" 
+			 >
+		
+		<s:Rect id="fillRect" left="0" right="0" top="0" bottom="0">
+			<s:fill>
+				<s:LinearGradient id="fill" x="0" y="0" rotation="90">
+					<s:GradientEntry id="fillEntry1" ratio="0"/>
+					<s:GradientEntry id="fillEntry2" ratio="0.5"/>
+					<s:GradientEntry id="fillEntry3" ratio="0.5"/>
+					<s:GradientEntry id="fillEntry4" ratio="1.0"/>
+				</s:LinearGradient>
+			</s:fill>
+		</s:Rect>
+		
+		<components:HLineTwo/>
+		
+		<s:Group width="100%" height="100%">
+			
+			<s:layout>
+				<s:VerticalLayout id="chromeGroupLayout"
+								  horizontalAlign="justify"/>
+			</s:layout>
+			
+			<s:Group id="contentGroup">
+				<s:layout>
+					<s:VerticalLayout id="contentGroupLayout" horizontalAlign="justify" paddingBottom="0" paddingLeft="0" paddingRight="0" paddingTop="0"/>
+				</s:layout>
+			</s:Group>
+			
+		</s:Group>
+		
+	</s:Group>
+</s:Skin>
