@@ -6,6 +6,6 @@ Self-organizing local social networks, more www.facebook.com/dudbro
     <th>Screenshots</th>
   </tr></thead>
   <tbody><tr>
-    <td><img src="http://imageshack.us/photo/my-images/816/22635420.jpg"/></td>
+    <td><img src="https://raw.github.com/ru-nekit-android/dudbro/master/screenshots/1.jpg"/></td>
 </tbody>
 </table>
