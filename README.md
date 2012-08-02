@@ -1,1 +1,1 @@
-Decentralized social network, more www.facebook/dudbro
+Decentralized social network, more www.facebook.com/dudbro
